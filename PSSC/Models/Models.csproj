@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Deanship\IReportPublisher.cs" />
     <Compile Include="Deanship\StudyYear.cs" />
+    <Compile Include="Deanship\StudyYearFactory.cs" />
     <Compile Include="Generics\Attendence.cs" />
     <Compile Include="Generics\Credits.cs" />
     <Compile Include="Generics\Exceptions\InvalidCreditsValue.cs" />
@@ -49,9 +50,11 @@
     <Compile Include="Generics\Proportion.cs" />
     <Compile Include="Generics\RegistrationNumber.cs" />
     <Compile Include="Professor\Professor.cs" />
+    <Compile Include="Professor\SubjectsFactory.cs" />
     <Compile Include="Professor\Subjects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student\GradeReport.cs" />
+    <Compile Include="Student\GradeReportFactory.cs" />
     <Compile Include="Student\Student.cs" />
     <Compile Include="Subject\EvaluationType.cs" />
     <Compile Include="Subject\Subject.cs" />

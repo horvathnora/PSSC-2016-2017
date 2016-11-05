@@ -12,9 +12,9 @@ namespace Models.Student
     //Aggregate Root
     public class GradeReport
     {
-        private ReadOnlyCollection<KeyValuePair<SubjectInformation, SubjectSituation>> _gradeReport;
+        private ICollection<KeyValuePair<SubjectInformation, SubjectSituation>> _gradeReport;
 
-        public GradeReport(ReadOnlyCollection<KeyValuePair<SubjectInformation, SubjectSituation>> gradeReport)
+        public GradeReport(ICollection<KeyValuePair<SubjectInformation, SubjectSituation>> gradeReport)
         {
             _gradeReport = gradeReport;
         }
