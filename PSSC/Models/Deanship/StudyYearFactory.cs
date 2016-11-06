@@ -7,17 +7,22 @@ using System.Threading.Tasks;
 
 namespace Models.Deanship
 {
-    class StudyYearFactory
+    public class StudyYearFactory
     {
+        public static readonly StudyYearFactory Instance = new StudyYearFactory();
+
         public StudyYear CreateDefinedSubjects(string name, int credits, string professorName, int numerator, int denominator, string type)
         {
             Contract.Requires<ArgumentNullException>(name != null, "string");
             Generics.PlainText Name = new Generics.PlainText(name);
+
             Contract.Requires<ArgumentOutOfRangeException>(credits >= 1 && credits <= 60, "number of credits");
             Generics.Credits Credits = new Generics.Credits(credits);
+
             Contract.Requires<ArgumentNullException>(professorName != null, "string");
             Generics.PlainText ProfessorName = new Generics.PlainText(professorName);
             Models.Professor.Professor Professor = new Models.Professor.Professor(ProfessorName);
+
             Generics.Proportion ActivityProportion = new Generics.Proportion(numerator, denominator);
             Models.Subject.EvaluationType Evaluation;
             if (type.Contains("examen"))
