@@ -53,6 +53,12 @@
     <Compile Include="Professor\SubjectsFactory.cs" />
     <Compile Include="Professor\Subjects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\GradeReportRepository.cs" />
+    <Compile Include="Repositories\IGradeReportRepository.cs" />
+    <Compile Include="Repositories\IStudyYearRepository.cs" />
+    <Compile Include="Repositories\ISubjectsRepository.cs" />
+    <Compile Include="Repositories\StudyYearRepository.cs" />
+    <Compile Include="Repositories\SubjectsRepository.cs" />
     <Compile Include="Student\GradeReport.cs" />
     <Compile Include="Student\GradeReportFactory.cs" />
     <Compile Include="Student\Student.cs" />
